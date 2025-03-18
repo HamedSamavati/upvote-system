@@ -109,12 +109,12 @@ npm run test -- --watch
 ### ✅ Upvote System UI initially or when you reset it.
 
 
-![Screenshot](https://raw.githubusercontent.com/HamedSamavati/upvote-system/main/screenshots/1.jpg)
+![Screenshot](https://github.com/HamedSamavati/upvote-system/blob/main/src/screenshots/1.jpg)
 
 
 ### ✅ Adding an upvote in either group and selecting or leaving it unselected.
 
-![Upvote System](https://github.com/HamedSamavati/upvote-system/tree/main/screenshots/2.jpg)
+![Upvote System](https://github.com/HamedSamavati/upvote-system/blob/main/src/screenshots/2.jpg)
 
 ---
 
