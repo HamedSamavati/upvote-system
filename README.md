@@ -38,6 +38,7 @@ npm run dev
 ```
 By default, the app runs on http://localhost:3000.
 
+---
 
 ### **✅ Running Tests**
 This project includes unit tests using Vitest & React Testing Library.
@@ -50,6 +51,9 @@ npm run test
 ```sh
 npm run test -- --watch
 ```
+
+---
+
 ### **📂 Project Structure**
 ```
 📦 upvote-system
@@ -68,6 +72,9 @@ npm run test -- --watch
 ├── vite.config.js        # Vite configuration
 ├── README.md             # This file
 ```
+
+---
+
 ### 🔥 Features
 - ✔ Upvote Items: Users can toggle upvotes on items.
 - ✔ Persistent State: Upvotes are stored using local storage.
@@ -88,10 +95,11 @@ npm run test -- --watch
 This project is open-source under the MIT License.
 
 ---
+
 ### 📌 Author
 ## Hamed Samavati
-💼 GitHub: @HamedSamavati
-📧 Email: hamed@samavati.ca
+- 💼 GitHub: @HamedSamavati
+- 📧 Email: hamed@samavati.ca
 
 ---
 
