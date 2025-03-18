@@ -104,6 +104,18 @@ npm run test -- --watch
 
 ---
 
+## 📸 Screenshots
+
+### ✅ Upvote System UI initially or when you reset it.
+
+![Upvote System](screenshots/1.jpg)
+
+### ✅ Adding an upvote in either group and selecting or leaving it unselected.
+
+![Adding Upvote](screenshots/2.jpg)
+
+---
+
 ### 📜 License
 
 This project is open-source under the MIT License.
