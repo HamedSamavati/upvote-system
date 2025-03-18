@@ -4,7 +4,7 @@
 
 This is a **React-based Upvote System** that allows users to upvote items dynamically. The application is designed using **React, Vite, Context API**, and **Vitest for testing**.
 
-### This project was developed as part of a **technical assessment** of ** Scrawlr company ** for the front-end developer position.
+### This project was developed as part of a **technical assessment** of **Scrawlr company** for the front-end developer position.
 
 ---
 
