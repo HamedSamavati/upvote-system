@@ -11,21 +11,16 @@
 
 .upvote-list {
   display: flex;
+  flex-wrap: wrap;
+  width: v.$list-width;
   gap: v.$spacing-small;
-  margin-bottom: v.$spacing-medium;
+  border: v.$list-container-border;
+  border-radius: v.$border-radius;
+  padding: v.$spacing-small;
 }
-
-.add-button {
-  width: v.$size-upvote;
-  height: v.$size-upvote;
-  background-color: v.$color-default-bg;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  @include m.flex-center;
-  transition: background 0.2s ease;
-
-  &:hover {
-    background-color: v.$color-button-hover;
-  }
+.upvote-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 10px 0;
 }

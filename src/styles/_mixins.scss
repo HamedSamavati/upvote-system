@@ -9,13 +9,48 @@
 @mixin upvote-button($bg-color, $arrow-color) {
   width: v.$size-upvote;
   height: v.$size-upvote;
-  border-radius: v.$border-radius;
+  font-size: v.$icon-size;
+  border-radius: v.$border-radius-button;
+  border: none;
   cursor: pointer;
   transition: background 0.3s ease;
   @include flex-center;
 
   background-color: $bg-color;
   color: $arrow-color;
+  &:hover {
+    background-color: v.$color-button-hover;
+  }
 }
 
-// @forward "mixins";
+@mixin reset-button {
+  width: v.$reset-width;
+  height: v.$size-upvote;
+  margin-top: 2rem;
+  border-radius: v.$spacing-small;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  @include flex-center;
+  font-weight: 600;
+  color: red;
+  svg {
+    padding-right: 5px;
+    font-size: v.$icon-size;
+  }
+  &:hover {
+    background-color: v.$color-button-hover;
+  }
+}
+
+@mixin home {
+  display: flex;
+  flex-direction: column;
+  padding: v.$home-padding;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+@mixin header {
+  margin-bottom: 1.2rem;
+  font-size: v.$header-font-size;
+}

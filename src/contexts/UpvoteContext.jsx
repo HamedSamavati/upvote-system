@@ -1,48 +1,46 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, React } from "react";
+import {
+  saveToLocalStorage,
+  getInitialState,
+  InitialState,
+} from "../services/app";
 
 export const UpvoteContext = createContext();
 
 export const UpvoteProvider = ({ children }) => {
-  const initialState = () => {
-    const storedData = localStorage.getItem("upvoteGroups");
-    return storedData
-      ? JSON.parse(storedData)
-      : {
-          agreeing: [
-            { id: 1, selected: false },
-            { id: 2, selected: false },
-          ],
-          disagreeing: [
-            { id: 3, selected: false },
-            { id: 4, selected: false },
-          ],
-        };
-  };
-
-  const [upvoteGroups, setUpvoteGroups] = useState(initialState);
+  const [upvoteGroups, setUpvoteGroups] = useState(getInitialState);
 
   useEffect(() => {
-    localStorage.setItem("upvoteGroups", JSON.stringify(upvoteGroups));
+    saveToLocalStorage("upvoteGroups", upvoteGroups);
+    console.log(upvoteGroups);
   }, [upvoteGroups]);
 
   const toggleUpvote = (group, id) => {
     setUpvoteGroups((prev) => ({
       ...prev,
-      [group]: prev[group].map((vote) =>
-        vote.id === id ? { ...vote, selected: !vote.selected } : vote
-      ),
+      [group]: Array.isArray(prev[group])
+        ? prev[group].map((vote) =>
+            vote.id === id ? { ...vote, selected: !vote.selected } : vote
+          )
+        : [],
     }));
   };
 
   const addUpvote = (group) => {
     setUpvoteGroups((prev) => ({
       ...prev,
-      [group]: [...prev[group], { id: Date.now(), selected: false }],
+      [group]: [...(prev[group] || []), { id: Date.now(), selected: false }],
     }));
   };
 
+  const resetUpvotes = () => {
+    setUpvoteGroups(InitialState);
+  };
+
   return (
-    <UpvoteContext.Provider value={{ upvoteGroups, toggleUpvote, addUpvote }}>
+    <UpvoteContext.Provider
+      value={{ upvoteGroups, toggleUpvote, addUpvote, resetUpvotes }}
+    >
       {children}
     </UpvoteContext.Provider>
   );

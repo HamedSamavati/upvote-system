@@ -4,9 +4,11 @@
 .add-button {
   width: v.$size-upvote;
   height: v.$size-upvote;
+  border: none;
   background-color: v.$color-default-bg;
-  border-radius: 50%;
+  border-radius: v.$border-radius-button;
   font-size: 24px;
+  margin-left: v.$spacing-small;
   cursor: pointer;
   @include m.flex-center;
   transition: background 0.2s ease;

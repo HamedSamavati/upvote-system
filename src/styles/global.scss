@@ -1,5 +1,18 @@
+@use "variables" as v;
+@use "mixins" as m;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.home {
+  @include m.home();
+}
+.reset-button {
+  @include m.reset-button();
+}
+.header {
+  @include m.header();
 }
