@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin upvote-button($bg-color, $arrow-color) {
+  width: v.$size-upvote;
+  height: v.$size-upvote;
+  border-radius: v.$border-radius;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  @include flex-center;
+
+  background-color: $bg-color;
+  color: $arrow-color;
+}
+
+// @forward "mixins";
