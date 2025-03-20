@@ -4,7 +4,7 @@
 
 This is a **React-based Upvote System** that allows users to upvote items dynamically. The application is designed using **React, Vite, Context API**, and **Vitest for testing**.
 
-### This project was developed as part of a **technical assessment** of ** Scrawlr company ** for the front-end developer position.
+### This project was developed as part of a **technical assessment** of **Scrawlr company** for the front-end developer position.
 
 ---
 
@@ -108,11 +108,13 @@ npm run test -- --watch
 
 ### ✅ Upvote System UI initially or when you reset it.
 
-![Upvote System](screenshots/1.jpg)
+
+![Screenshot](https://github.com/HamedSamavati/upvote-system/blob/main/src/screenshots/1.jpg)
+
 
 ### ✅ Adding an upvote in either group and selecting or leaving it unselected.
 
-![Adding Upvote](screenshots/2.jpg)
+![Upvote System](https://github.com/HamedSamavati/upvote-system/blob/main/src/screenshots/2.jpg)
 
 ---
 
