@@ -9,10 +9,20 @@
 
 .home {
   @include m.home();
+  background-color: rgb(211, 211, 211);
 }
 .reset-button {
   @include m.reset-button();
+  box-shadow: v.$box-shadow;
 }
 .header {
   @include m.header();
+}
+
+.lists-container {
+  width: 60vw;
+  background-color: #fff;
+  box-shadow: v.$box-shadow;
+  padding: v.$spacing-large;
+  border-radius: v.$border-radius;
 }

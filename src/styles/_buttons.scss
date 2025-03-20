@@ -8,7 +8,7 @@
   background-color: v.$color-default-bg;
   border-radius: v.$border-radius-button;
   font-size: 24px;
-  margin-left: v.$spacing-small;
+  margin-left: v.$spacing-large;
   cursor: pointer;
   @include m.flex-center;
   transition: background 0.2s ease;

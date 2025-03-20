@@ -10,8 +10,11 @@ const Home = () => {
   return (
     <div className="home">
       <h1 className="header">Upvote System</h1>
-      <UpvoteList group="agreeing" />
-      <UpvoteList group="disagreeing" />
+      <div className="lists-container">
+        <UpvoteList group="agreeing" />
+        <UpvoteList group="disagreeing" />
+      </div>
+
       <button className="reset-button" onClick={resetUpvotes}>
         <GrPowerReset />
         Reset

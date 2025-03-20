@@ -33,24 +33,27 @@
   cursor: pointer;
   @include flex-center;
   font-weight: 600;
-  color: red;
+  color: #000;
   svg {
     padding-right: 5px;
     font-size: v.$icon-size;
   }
   &:hover {
     background-color: v.$color-button-hover;
+    color: red;
   }
 }
 
 @mixin home {
   display: flex;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
   padding: v.$home-padding;
   font-family: "Afacad Flux", sans-serif;
 }
 
 @mixin header {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
   font-size: v.$header-font-size;
 }
