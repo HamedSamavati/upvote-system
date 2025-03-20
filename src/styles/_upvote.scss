@@ -10,17 +10,12 @@
 }
 
 .upvote-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: v.$list-width;
-  gap: v.$spacing-small;
-  border: v.$list-container-border;
-  border-radius: v.$border-radius;
-  padding: v.$spacing-small;
+  @include m.upvote-list;
 }
 .upvote-list-container {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin: v.$spacing-large 0;
+  @include m.upvote-list-container;
+}
+
+.add-button {
+  @include m.add-button();
 }

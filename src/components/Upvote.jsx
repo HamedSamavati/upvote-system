@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/_buttons.scss";
 import "../styles/_upvote.scss";
 
 import { FaArrowUp } from "react-icons/fa";

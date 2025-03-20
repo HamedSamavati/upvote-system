@@ -23,6 +23,23 @@
   }
 }
 
+@mixin add-button {
+  width: v.$size-upvote;
+  height: v.$size-upvote;
+  border: none;
+  background-color: v.$color-default-bg;
+  border-radius: v.$border-radius-button;
+  font-size: 24px;
+  margin-left: v.$spacing-large;
+  cursor: pointer;
+  @include flex-center;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: v.$color-button-hover;
+  }
+}
+
 @mixin reset-button {
   width: v.$reset-width;
   height: v.$size-upvote;
@@ -47,13 +64,39 @@
 @mixin home {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   flex-direction: column;
   padding: v.$home-padding;
   font-family: "Afacad Flux", sans-serif;
+  background-color: rgb(211, 211, 211);
 }
 
 @mixin header {
   margin-bottom: 2.6rem;
   font-size: v.$header-font-size;
+}
+
+@mixin lists-container {
+  width: 60vw;
+  background-color: #fff;
+  box-shadow: v.$box-shadow;
+  padding: 0 v.$spacing-large;
+  border-radius: v.$border-radius;
+}
+
+@mixin upvote-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: v.$list-width;
+  gap: v.$spacing-small;
+  border: v.$list-container-border;
+  border-radius: v.$border-radius;
+  padding: v.$spacing-small;
+}
+@mixin upvote-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: v.$spacing-large 0;
 }
